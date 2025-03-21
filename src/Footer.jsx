@@ -19,7 +19,7 @@ const Footer = () => {
       </button>
       <div className="footer-info">
         <p><strong>Class:</strong> REL C 225-012, 400: Foundations of the Restoration</p>
-        <p><strong>Project:</strong> Winter 2021</p>
+        <p><strong>Project:</strong> Winter 2025</p>
         <p><strong>Professor:</strong> Professor Esplin</p>
         <p><strong>Published Date:</strong> 3/21/2025</p>
         <p><strong>Author:</strong> Samuel K Richey</p>
