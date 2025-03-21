@@ -63,41 +63,43 @@ h1 {
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Centers the content */
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow for depth */
 }
 
 /* Image Styling */
 .event-image {
-  flex: 1;
-  max-width: 100%;
+  flex: 1 1 40%; /* 40% width for image */
+  max-width: 40%; /* Ensures image doesn't go beyond 40% width */
+  height: auto;
   align-self: flex-start;
   display: flex;
   justify-content: center;
-  height: auto;
-  border-radius: 8px;
   margin-right: 10px;
+  align-items: center; /* Centers image vertically */
 }
 
-
-/* Divider between image and text */
-.divider {
-  width: 3px;  /* Slightly thicker divider */
-  height: 70%;  /* Make the divider shorter (around 70% of the container's height) */
-  background-color: #6cc0e0;  /* Light blue divider */
-  margin: 0 15px;  /* Adjust space around the divider */
-  display: inline-block;
+/* Center the image */
+.event-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* Ensures image fits without distortion */
+  border-radius: 8px;
 }
-
-
 
 /* Text Section */
 .event-text {
-  flex: 1;
+  flex: 1 1 50%;  /* 50% width for text */
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the text */
+  align-items: center;  /* Horizontally centers the text */
+  padding: 0 20px; /* Adds some padding for spacing */
 }
 
+/* Show Details Button */
 .show-details-btn {
   background-color: #007da5;
   color: white;
@@ -148,3 +150,44 @@ h1 {
     flex: none;
   }
 }
+
+/* Footer Styling */
+.footer {
+  background-color: #002a3e; /* Dark blue background like navbar */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px; /* Space before the footer */
+  border-radius: 8px;
+}
+
+.footer-info {
+  margin-top: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.back-to-top-btn {
+  background-color: #007da5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.back-to-top-btn:hover {
+  background-color: #006b8e;
+}
+
+@media (max-width: 768px) {
+  .footer-info {
+    font-size: 0.9em; /* Slightly smaller font size on smaller screens */
+  }
+}
+

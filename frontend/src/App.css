@@ -78,11 +78,15 @@
 
 /* Image Styling */
 .event-image {
-  flex: 1; /* Take up half of the available space */
-  max-width: 100%;
-  height: auto;
+  flex: 1;
+  width: 300px;  /* Fixed width for consistency */
+  height: 200px;  /* Fixed height for consistency */
+  object-fit: cover;  /* Ensures images maintain aspect ratio without distortion */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the image */
+  margin-right: 10px;
 }
 
 /* Text Section Styling */
