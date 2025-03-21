@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src/App.css */
+
+/* Timeline Section Styling */
+.timeline-section {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.timeline-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timeline-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Button Styling */
+.show-details-btn {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
+.show-details-btn:hover {
+  background-color: #5a5aee;
+  text-decoration: underline;
 }
 
-.read-the-docs {
-  color: #888;
+/* Event Details Styling */
+.event-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #444;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.event-details img {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image outside the event-details section */
+.event-image {
+  margin-top: 20px;
+  text-align: center;  /* Center the image */
+}
+
+.event-image img {
+  max-width: 80%;  /* Adjust image size to fit well within the card */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline Section Styling */
+.timeline-section {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  display: flex; /* Use flexbox to split content into two halves */
+  flex-direction: row; /* Default direction, display content side by side */
+  align-items: center; /* Align vertically */
+}
+
+/* Image Styling */
+.event-image {
+  flex: 1; /* Take up half of the available space */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to the image */
+}
+
+/* Text Section Styling */
+.event-text {
+  flex: 1; /* Take up half of the available space */
+  padding-left: 20px; /* Space between the image and text */
+  text-align: left;
+}
+
+/* Button Styling */
+.show-details-btn {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Add some space below the text */
+}
+
+.show-details-btn:hover {
+  background-color: #5a5aee;
+  text-decoration: underline;
+}
+
+/* Event Details Styling */
+.event-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #444;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.event-details img {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
